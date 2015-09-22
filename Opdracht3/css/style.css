@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 140%;
+}
+
+html {
+    color: #333;
+    background: #fff;
+
+}
+
+h1 {
+  font-size: 3.2vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2.2vmin;
+}
+
+body > section > article{
+    display: inline-block;
+    float: right;
+    width: 19%;
+    background: pink;
+    margin: 0.1em;
+    padding: 0.3em;
+    max-height: 40em;
+    overflow: hidden;
+}
+
+body > main > article {
+    padding: 0.5em;
+}
+
+body > header{
+    display: inline-block;
+    width: 20%;
+    position: fixed;
+    background: red;
+}
+
+main, aside, footer, .related{
+    margin: 0 0 0 20%;
+}
+
+aside, footer{
+    padding-left: 0.3em;
+}
+
+aside {
+    float: right;
+    display: inline-block;
+}
+
+footer{
+    float: right;
+    display: inline-block;
+}
+
+ol, ul{
+    margin-left: 3em;
+    font-size: 2vmin;
+}
