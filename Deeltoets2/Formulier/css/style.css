@@ -19,12 +19,43 @@ main {
     box-shadow: inset 0 0 10px #3F99BF;
 }
 
+p, em, fieldset{
+    padding: 0.5em;
+}
+
+a[href="#contact"]{
+    color: #3A9DBF;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a[href="#contact"]:hover{
+    transform: scale(2);
+    margin: 0 2em 0 2em;
+    transition: 0.3s;
+}
+
+
 h1 {
     color: whitesmoke;
     text-shadow:0 0 .1em black, 0 0 .2em black;
-    margin: 60px 0 20px 0;
-    width: 100%;
+    margin: 2em auto 1em auto;
+    width: 10em;
+    height: 2em;
+    background-color: #DB894A;
+    border: 0.3em dotted black;
+    border-radius: 1em;
+    transition: 0.4s;
+    text-align: center;
+    line-height: 2em;
 }
+
+h1:hover {
+    background: #3F99BF;
+    transition: 0.4s;
+}
+
 
 h2{
     margin: 7px 0 7px 0;
@@ -32,15 +63,18 @@ h2{
 
 label{
     display: block;
-    margin: 6px 6px 6px 4px;
-    width: 250px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .div-table-col > label {
-    width: 400px;
+    width: 20%;
     vertical-align: middle;
-    height: 50px;
+    height: 4em;
     text-align: right;
+}
+
+.div-table-col > label > input{
+    margin-right: 3em;
 }
 
 fieldset{
@@ -49,50 +83,41 @@ fieldset{
 
 .buttonCentre{
     text-align: center;
-}
-
-/* CSS voor de table */
-.div-input{
-    display: table-cell;
-    vertical-align: middle;
-    height: 50px;
-    text-align: right;
+    margin: 3em auto 3em auto;
 }
 
 .div-table{
     border-radius: 50px;
-    display: table;
+    display: flex;
     width: 100%;
     text-align: center;
-    margin: 10px 10px 10px 0;
     background: #BF4C08;
     color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.div-table-row{
-    display: table-row;
-    width: 100%;
-    clear: both;
-}
+
 .div-table-col{
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
+    width: 50%;
+    transition: 0.4s;
 }
 
-.effect1{
-    transition: 1s;
-    opacity: 0.5;
+.div-table-col:hover{
+    background: #3F99BF;
+    transition: 0.4s;
 }
 
-.effect1:hover{
-    opacity: 1;
-    background: #333232;
+.div-table-col > h3, .div-table-col > h2{
+    border-bottom: solid white 0.1em;
 }
 
 .emptyCell {
     height: 5em;
 }
 
+
+/*Animation*/
 .blockAnimation {
     display: inline-block;
     background-color: #BF4C08;
@@ -144,32 +169,27 @@ fieldset{
     main{
         width: 100%;
         margin: 0;
+        padding: 0;
     }
 
     h1{
         text-align: center;
+        margin-top: 0;
+
     }
 
     .div-table{
-        margin: 0;
         border-radius: 0;
-        width: 100%;
     }
 
-    .div-table-row{
-        display: inline-block;
-    }
     .div-table-col{
-        display: inline-block;
+
+        text-align: center;
+        justify-content: center;
     }
 
-    label{
-        width: auto;
-    }
 
-    .div-table-col > label {
-        width: auto;
-    }
+
 }
 
 

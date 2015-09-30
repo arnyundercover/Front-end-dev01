@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box;*/
+    line-height: 140%;
+}
+
+h1, h2, h3{
+    margin-top: 1em;
+}
+
+html {
+    color: #333;
+    background: #fff;
+}
+
+/* Headerflex container */
+body > header {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content:center;
+    background-color: #67ADBF;
+}
+/* Headerflex items*/
+body > header > p, body > header > img, body > header > nav, body > header > form {
+    outline: red solid 1px;
+    flex-basis: 10em;
+}
+
+body > header > h1{
+    flex-basis: 10em;
+    text-align: center;
+}
+
+body > footer{
+    background: #67ADBF;
+}
+
+/* Main articleflex container */
+body > main > article{
+    display: flex;
+    flex-direction: row;
+    max-width: 60em;
+    flex-wrap: wrap;
+    outline: red solid 1px;
+    margin: 1em auto 1em auto;
+    justify-content:flex-start;
+}
+/* Main articleflex items */
+body > main > article > header{
+    border: solid blue 1px;
+    max-width: 60em;
+    padding: 1em;
+}
+body > main > article > section{
+    outline: solid red 1px;
+    max-width: 28em;
+    padding: 0.5em;
+}
+
+/* Relatedflex container */
+body > .related{
+    display: flex;
+    flex-wrap: wrap;
+    outline: red solid 1px;
+    margin: 1em auto 1em auto;
+    max-width: 60em;
+    justify-content: space-around;
+}
+/* Relatedflex items */
+body > .related > h2{
+    width: 100%;
+}
+body > .related > article{
+    width: 20em;
+    outline: blue solid 1px;
+}
+
+
+
+/* Related articleflex container */
+body > .related > article{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+/* Related articleflex item footer */
+body > .related > article > footer{
+    order: 2;
+}
+
+
+body > aside {
+    max-width: 60em;
+    margin: auto;
+
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: #45747F;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #45747F;
+}
+
+/* mouse over link */
+a:hover {
+    color: #45747F;
+}
+
+/* selected link */
+a:active {
+    color: #45747F;
+}
+
+body > header > nav > ul > li:hover{
+    background: #fff;
+}
+
+
+/* Breakpoint tablet */
+@media only screen and (max-width: 1024px), and (max-device-width: 1024px){
+        li{
+        list-style-type: none;
+    }
+
+    body > header > nav{
+        order: 2;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    body > header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em auto 1em auto;
+        justify-content: center;
+    }
+
+    body > header > nav > ul > li{
+    background: #333;
+    outline: white solid 0.1em;
+    height: 2em;
+    text-align: center;
+        flex-grow: 1;
+    }
+}
+
+
+/* Breakpoint smartphone */
+@media only screen and (max-width: 480px), and (max-device-width: 480px){
+    li{
+        list-style-type: none;
+    }
+
+    body > header > p, body > header > h1 span, body > header > img {
+        display: none;
+    }
+    body > header > h1, body > header > p, body > header > img, body > header > nav, body > header > form {
+        flex-basis: auto;
+    }
+
+    body > header > h1:after{
+        content: "CMD";
+    }
+
+    body > header {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    body > header > nav > ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1em auto 1em auto;
+
+}
+
+    body > header > nav > ul > li{
+    background: #333;
+    outline: white solid 0.1em;
+    height: 2em;
+    text-align: center;
+        width: 100%;
+}
+    body > .related > article{
+        width: auto;
+        padding: 1em;
+    }
+    body > aside, body > footer{
+        width: auto;
+        padding: 1em;
+    }
+}
+
+
+
+
+/* Breakpoint small desktop screen */
+@media only screen and (max-width: 1440px), and (max-device-width: 1440px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

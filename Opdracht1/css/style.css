@@ -130,3 +130,43 @@ a:hover {
 a:active {
     color: #1D3042;
 }
+
+@media only screen and (max-width: 1024px), and (max-device-width: 1024px){
+    main{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px), and (max-device-width: 600px){
+    main{
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    ol{
+        margin: 1em 0 0 0;
+        vertical-align: middle;
+    }
+    li{
+        list-style-type: none;
+        border: 1px solid white;
+        height: 2em;
+        text-align: center;
+        width: 100%;
+        background: #DB894A;
+        padding-top: 0.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

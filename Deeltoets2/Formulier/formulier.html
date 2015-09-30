@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+       <h1>Aanmelden</h1>
+        <div class="blockAnimation"><p>HI!</p></div>
+        <p>
+            Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan tijdens de opleiding werken studenten aan projecten voor echte                 opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.
+        </p>
+        <p>
+        <em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em>
+        </p>
+        <p>
+            Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat               het formulier is verstuurd. Voor vragen of opmerkingen kunt u <a href="#contact"> contact</a> met ons opnemen.
+        </p>
+        <form>
+            <fieldset>
+                <legend>Contactgegevens</legend>
+                <label class="div-input">Naam <input type="text"></label>
+                <label class="div-input">Bedrijf <input type="text"></label>
+                <label class="div-input">Adres <input type="text"></label>
+                <label class="div-input">Postcode <input type="text"></label>
+                <label class="div-input">Plaats <input type="text"></label>
+                <label class="div-input">Telefoon <input type="number"></label>
+                <label class="div-input">Email <input type="email"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Ik wil mijn aanmelden</legend>
+                  <label>Voor een project <input type="radio" name="aanmelden" value="1" checked></label>
+                  <label>Als stagebedrijf <input type="radio" name="aanmelden" value="2"></label>
+            </fieldset>
+            <div class="div-table">
+
+                    <div class="div-table-col"><h2>Project</h2></div>
+                    <div class="div-table-col"><h2>Stage</h2></div>
+
+                    <div class="div-table-col">
+
+                            <label>Titel <input type="text"></label>
+                            <label>Opdrachtomschrijving <input type="text"></label>
+                            <label>Doelgroepomschrijving <input type="text"></label>
+                            <label>Doelstelling/intentievanhetproject <input type="text"></label>
+                            <label>Looptijd <input type="text"></label>
+                            <label>Deadline <input type="text"></label>
+
+                    </div>
+                    <div class="div-table-col">
+                        <h3>Geschikt voor</h3>
+                            <label>tweedejaarsstudenten <input type="radio" name="geschiktVoor1" value="1" checked></label>
+                            <label>afstudeerstudenten <input type="radio" name="geschiktVoor1" value="2"></label>
+                            <label>onbekend <input type="radio" name="geschiktVoor1" value="3"></label>
+                    </div>
+                    <div class="div-table-col">
+                        <h3>Geschikt voor</h3>
+                            <label>eerstejaarsstudenten <input type="radio" name="geschiktVoor2" value="1" checked></label>
+                            <label>tweedejaarsstudenten <input type="radio" name="geschiktVoor2" value="2"></label>
+                            <label>derdejaarsstudenten <input type="radio" name="geschiktVoor2" value="3"></label>
+                            <label>afstudeerstudenten <input type="radio" name="geschiktVoor2" value="4"></label>
+                            <label>onbekend <input type="radio" name="geschiktVoor2" value="5"></label>
+                    </div>
+                    <div class="div-table-col">
+                        <h3>Hoe lang is de stage?</h3>
+                        <label>10 weken <input type="radio" name="aantweken" value="1" checked></label>
+                        <label>20 weken <input type="radio" name="aantweken" value="2"></label>
+                        <label>Begindatum <input type="date"></label>
+                    </div>
+                    <div class="div-table-col emptyCell"><!--empty div?--></div>
+                    <div class="div-table-col">
+                        <h3>Beschrijving stagewerkzaamheden</h3>
+                        <input type="text">
+                    </div>
+                    <div class="div-table-col">
+                        <h2>Project</h2>
+                    </div>
+                    <div class="div-table-col">
+                        <h2>Stage</h2>
+                    </div>
+                    <div class="div-table-col emptyCell"><!--empty div?--></div>
+                    <div class="div-table-col">
+                        <h3>Beschrijving stagebedrijf</h3>
+                            <label>Bedrijfsnaam <input type="text"></label>
+                            <label>Adres <input type="text"></label>
+                            <label>postcode <input type="text"></label>
+                            <label>Plaats <input type="text"></label>
+                            <label>Sector <input type="text"></label>
+                            <label>CoreBusiness <input type="text"></label>
+                    </div>
+                    <div class="div-table-col">
+                        <label>Opmerking <input type="text"></label>
+                    </div>
+                    <div class="div-table-col">
+                        <label>Opmerking <input type="text"></label>
+                    </div>
+                    <div class="buttonCentre">
+                    <input type="submit">
+                    </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

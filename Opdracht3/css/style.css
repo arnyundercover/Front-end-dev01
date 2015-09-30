@@ -8,7 +8,6 @@
 html {
     color: #333;
     background: #fff;
-
 }
 
 h1 {
@@ -16,20 +15,32 @@ h1 {
 }
 h2 {
   font-size: 3.0vh;
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 1em;
 }
 p {
   font-size: 2.2vmin;
 }
 
-body > section > article{
+
+article > section {
+    border: dotted 0.1em black;
     display: inline-block;
-    float: right;
-    width: 19%;
-    background: pink;
+    padding: 0.5em;
+    width: 48%;
+}
+
+body > section > article{
+    border: dotted 0.1em;
+    display: inline-block;
+    /*background: #333;*/
     margin: 0.1em;
     padding: 0.3em;
-    max-height: 40em;
-    overflow: hidden;
+    /*max-height: 40em;
+    overflow: hidden;*/
 }
 
 body > main > article {
@@ -37,31 +48,67 @@ body > main > article {
 }
 
 body > header{
-    display: inline-block;
-    width: 20%;
-    position: fixed;
-    background: red;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: bisque;
+
 }
 
-main, aside, footer, .related{
-    margin: 0 0 0 20%;
+main, aside, .related{
+    width: 70%;
+    margin: auto;
+}
+
+.related > article{
+    display: flex;
+
+}
+
+.related > article > footer{
+    order: 2;
 }
 
 aside, footer{
     padding-left: 0.3em;
 }
 
-aside {
-    float: right;
+aside > section {
+    border: dotted 0.1em black;
     display: inline-block;
+    padding: 0.5em;
+    width: 48%;
 }
 
-footer{
-    float: right;
+body > footer{
     display: inline-block;
+    background: #333;
+    color: #fff;
+    margin: 1em 0 0 0;
 }
 
 ol, ul{
     margin-left: 3em;
     font-size: 2vmin;
+}
+
+/* unvisited link */
+a:link {
+    color: #45747F;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #45747F;
+}
+
+/* mouse over link */
+a:hover {
+    color: #45747F;
+}
+
+/* selected link */
+a:active {
+    color: #45747F;
 }
