@@ -274,7 +274,7 @@ a[href="#feedback"]{
 /*--------Media Queries--------*/
 
 /*--------Breakpoint Tablet Size--------*/
-@media only screen and (max-width: 1024px), and (max-device-width: 1024px){
+@media only screen and (max-width: 1024px){
     .mainContent > main{
         width: 75%;
         padding: 0.5em;
@@ -314,7 +314,7 @@ a[href="#feedback"]{
 }
 
 /*--------Breakpoint Smartphone Size--------*/
-@media only screen and (max-width: 600px), and (max-device-width: 600px){
+@media only screen and (max-width: 600px){
     body > header > h1, body > header > p{
         display: none;
     }

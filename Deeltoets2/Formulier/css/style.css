@@ -1,195 +1,387 @@
-/*------Algemene CSS------*/
-*{
+/*-------- Algemene css --------*/
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    line-height: 140%;
 }
 
 html {
-    background-color: #3F99BF;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #fff;
 }
 
-main {
-    width: 70%;
-    margin-left: auto;
-    padding: 20px;
-    background-color: whitesmoke;
-    -moz-box-shadow: inset 0 0 10px #3F99BF;
-   -webkit-box-shadow: inset 0 0 10px #3F99BF;
-    box-shadow: inset 0 0 10px #3F99BF;
+li{
+    list-style-type: none;
 }
 
-p, em, fieldset{
-    padding: 0.5em;
-}
-
-a[href="#contact"]{
-    color: #3A9DBF;
-    display: inline-block;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a[href="#contact"]:hover{
-    transform: scale(2);
-    margin: 0 2em 0 2em;
-    transition: 0.3s;
-}
-
-
-h1 {
-    color: whitesmoke;
-    text-shadow:0 0 .1em black, 0 0 .2em black;
-    margin: 2em auto 1em auto;
-    width: 10em;
-    height: 2em;
-    background-color: #DB894A;
-    border: 0.3em dotted black;
-    border-radius: 1em;
-    transition: 0.4s;
-    text-align: center;
-    line-height: 2em;
-}
-
-h1:hover {
-    background: #3F99BF;
-    transition: 0.4s;
-}
-
-
-h2{
-    margin: 7px 0 7px 0;
-}
-
-label{
+fieldset > label{
     display: block;
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    width: 100%;
+    margin: 0.5em;
 }
 
-.div-table-col > label {
-    width: 20%;
-    vertical-align: middle;
-    height: 4em;
-    text-align: right;
+/* unvisited link */
+a:link {
+    color: #3A9DBF;
+    text-decoration: none;
 }
 
-.div-table-col > label > input{
-    margin-right: 3em;
+/* visited link */
+a:visited {
+    color: #3A9DBF;
 }
 
-fieldset{
-    margin: 2em 0 2em 0;
+/* mouse over link */
+a:hover {
+    color: #3A9DBF;
 }
 
-.buttonCentre{
-    text-align: center;
-    margin: 3em auto 3em auto;
+/* selected link */
+a:active {
+    color: #3A9DBF;
 }
 
-/*------Table CSS------*/
-.div-table{
-    border-radius: 50px;
+
+
+
+
+/*-------- Header + Flexbox --------*/
+body > header{
+    background: #ffcc00;
+    color: #fff;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.headerImage {
+    order: -1;
+    width: 20%;
+    height: 20%;
+    margin: 1em auto auto auto;
+    transition: 0.5s;
+}
+
+.headerImage:hover{
+    transform: rotate(10deg);
+    transition: 0.5s;
+
+}
+
+body > header > p{
+    text-align: center;
+}
+
+body > header > form{
+    order: 2;
+    align-self: center;
+    margin-left: 6em;
+}
+
+body > header > nav{
+    order: 3;
+    margin: auto;
+}
+
+body > header > h1{
     width: 100%;
     text-align: center;
-    background: #BF4C08;
-    color: white;
+    text-shadow:0 0 .1em white, 0 0 .4em white;
+}
+
+
+
+body > header > nav > ul{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.div-table-col{
-    width: 50%;
-    transition: 0.4s;
-}
-
-.div-table-col:hover{
-    background: #3F99BF;
-    transition: 0.4s;
-}
-
-.div-table-col > h3, .div-table-col > h2{
-    border-bottom: solid white 0.1em;
-}
-
-.emptyCell {
-    height: 5em;
-}
-
-
-/*Animation*/
-.blockAnimation {
-    display: inline-block;
-    background-color: #BF4C08;
-    height: 15px;
-    width: 15px;
-    padding: 20px;
-    color: white;
-    animation: roll 7s infinite;
     text-align: center;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    -moz-box-shadow: inset 0 0 10px black;
-   -webkit-box-shadow: inset 0 0 10px black;
-    box-shadow: inset 0 0 10px black;
+    justify-content: center;
 }
 
-@keyframes roll {
-    0% {
-    transform: rotate(0deg);
-  }
-    25% {
-    transform: rotate(45deg);
-  }
-    50% {
-    transform: rotate(0deg);
-  }
-    75% {
-    transform: rotate(-45deg);
-  }
-    100% {
-    transform: rotate(0deg);
-  }
+body > header > nav > ul > li{
+    display: block;
+    width: 10em;
+    height: 3em;
+    line-height: 3em;
 }
 
-@media only screen and (max-width: 1024px), and (max-device-width: 1024px){
-    .blockAnimation{
+body > header > nav > ul > li > a{
+    opacity: 0.6;
+}
+
+body > header > nav > ul > li > a:hover{
+    opacity: 1;
+}
+
+.active{
+    opacity: 1;
+}
+
+.to-profile{
+    order: 4;
+    align-self: center;
+    opacity: 0.6;
+}
+
+.to-profile:hover{
+    opacity: 1;
+}
+
+a[href="#Elena"]{
+    color: #BF2A25;
+    margin-right: 1em;
+}
+
+
+
+/*-------- Hoofdcontent: Main + aside + related (incl flexbox) --------*/
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.mainContent > main{
+    width: 60%;
+    order: 1;
+    padding: 2em 2em 0 6em;
+
+}
+
+.mainContent > main > article > section > img{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1em;
+}
+
+aside{
+    width: 30%;
+    order: 2;
+    padding: 2em;
+    background: #BEC2C1;
+        -webkit-box-shadow: inset 0 0 15px #333;
+        -moz-box-shadow: inset 0 0 15px #333;
+            box-shadow: inset 0 0 15px #333;
+}
+
+aside > section > article{
+    border-top: dotted white 0.1em;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.related{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 3;
+    background: #ffcc00;
+    justify-content:flex-start;
+     -webkit-box-shadow: inset 0 0 15px #333;
+        -moz-box-shadow: inset 0 0 15px #333;
+            box-shadow: inset 0 0 15px #333;
+}
+
+.related > h2{
+    width: 100%;
+    text-align: center;
+}
+
+.related > article{
+    width: 20%;
+}
+
+
+
+/*-------- Footer + Flexbox --------*/
+
+body > footer{
+    background: #303033;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sitemap > h2{
+    text-align: center;
+}
+
+#sitemap > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sitemap > ul > li > a, #sitemap > ul > li > ul > li > a{
+    opacity: 0.6;
+}
+
+#sitemap > ul > li > a:hover, #sitemap > ul > li > ul > li > a:hover{
+    opacity: 1;
+}
+
+#contact{
+    width: 50%;
+    order: 3;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    border-bottom: dotted white 0.2em;
+}
+
+#feedback{
+    width: 50%;
+    order: 1;
+    margin: 1em auto 1em auto;
+    border-bottom: dotted white 0.2em;
+    padding: 1em;
+}
+
+a[href="#feedback"]{
+    color: #DBB34D;
+}
+
+#search{
+    width: 50%;
+    order: 2;
+    margin: 1em auto 1em auto;
+    border-bottom: dotted white 0.2em;
+    padding: 1em;
+}
+
+#sitemap{
+    width: 90%;
+    order: 4;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+}
+
+#about{
+    width: 50%;
+    order: 3;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    border-bottom: dotted white 0.2em;
+}
+
+#credits{
+    width: 90%;
+    order: 6;
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+
+
+
+/*--------Media Queries--------*/
+
+/*--------Breakpoint Tablet Size--------
+@media only screen and (max-width: 1024px){
+    .mainContent > main{
+        width: 75%;
+        padding: 0.5em;
+    }
+
+    aside{
+        width: 25%;
+        padding: 0.5em;
+    }
+
+    body > header{
+        border-bottom-left-radius: 5em;
+    }
+
+    .mainContent > main > article > section > img{
+    max-height: 60%;
+    max-width: 60%;
+    margin: 0.5em;
+    }
+
+    .related > article{
+    width: 30%;
+    }
+
+    body > header > p:nth-child(2){
         display: none;
     }
 
-    main{
-        margin: auto;
-        width: 80%;
+     body > header > nav > ul > li > a{
+        opacity: 1;
+    }
+
+    #sitemap > ul > li > a, #sitemap > ul > li > ul > li > a{
+        opacity: 1;
     }
 
 }
 
-@media only screen and (max-width: 600px), and (max-device-width: 600px){
-    main{
+/*--------Breakpoint Smartphone Size--------
+@media only screen and (max-width: 600px){
+    body > header > h1, body > header > p{
+        display: none;
+    }
+
+    .headerImage{
+        width: 60%;
+        height: 60%;
+    }
+
+    .mainContent > main > article > section > img{
+    max-height: 90%;
+    max-width: 90%;
+    margin: auto;
+    }
+
+    body > header{
+        border-bottom-left-radius: 0;
+    }
+
+    body > header > form{
         width: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 1em 0 0 40%;
     }
 
-    h1{
-        text-align: center;
-        margin-top: 0;
-
+    .mainContent > main, .mainContent > aside, .mainContent > .related{
+        width: 100%;
     }
 
-    .div-table{
-        border-radius: 0;
-    }
-
-    .div-table-col{
-
-        text-align: center;
-        justify-content: center;
-    }
+    body > header > nav > ul > li{
+        width: 100%;
+        height: 2em;
+        line-height: 2em;
 }
+
+    .related > article{
+    width: 100%;
+        padding: 1em;
+    }
+
+    #feedback, #about, #search{
+        display: none;
+    }
+
+    #contact, #sitemap{
+        width: 100%;
+    }
+
+    #sitemap > ul{
+        justify-content: space-between;
+    }
+
+}*/
+
+
+
+
+
+
+
+
+
+
 
 
 
