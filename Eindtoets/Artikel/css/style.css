@@ -1,0 +1,460 @@
+/*-------- Algemene css --------*/
+* {
+    box-sizing: border-box;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #fff;
+    color: #333;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+li{
+    list-style-type: none;
+}
+
+body > main > article > header > p:nth-of-type(1):first-letter {
+    font-size: 2em;
+}
+
+/* unvisited link */
+a:link { /*Pseudo class*/
+    color: #3A9DBF;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #3A9DBF;
+}
+
+/* mouse over link */
+a:hover {
+    color: #3A9DBF;
+}
+
+/* selected link */
+a:active {
+    color: #3A9DBF;
+}
+
+
+
+
+
+/*-------- Header + Flexbox --------*/
+body > header{ /*Sibling combinator*/
+    align-items: stretch;
+    background: #303033;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    order: -1;
+    position: fixed;
+    width: 20%;
+}
+
+#placeHolder{
+    display: block;
+    order: 0;
+    width: 20%;
+}
+
+body > header > p{
+    text-align: center;
+}
+
+body > header > form{
+    align-self: center;
+    order: 2;
+}
+
+body > header > nav{
+    margin: auto;
+    order: 3;
+}
+
+body > header > h1{
+    text-align: center;
+    text-shadow:0 0 .1em white, 0 0 .4em white; /*Text-shadow*/
+     -webkit-text-shadow:0 0 .1em white, 0 0 .4em white;
+        -moz-text-shadow:0 0 .1em white, 0 0 .4em white;
+    width: 100%;
+}
+
+body > header > nav > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+body > header > nav > ul > li{
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: 100%;
+}
+
+body > header > nav > ul > li > a{
+    opacity: 0.6;
+}
+
+body > header > nav > ul > li > a:hover{
+    opacity: 1;
+}
+
+.headerImage {
+    margin: 1em auto auto auto;
+    max-width: 90%;
+    order: -1;
+    transition: 0.5s; /*Transition*/
+}
+
+.headerImage:hover{
+    transform: rotate(10deg); /*Transform*/
+    transition: 0.5s; /*Transition*/
+}
+
+.active{
+    opacity: 1;
+}
+
+.to-profile{
+    align-self: center;
+    margin-bottom: 1em;
+    opacity: 0.6;
+    order: 4;
+}
+
+.to-profile:hover{
+    opacity: 1;
+}
+
+a[href="#Elena"]{ /*Attribute selector*/
+    color: #BF2A25;
+    margin-right: 1em;
+}
+
+
+
+/*-------- Hoofdcontent: Main + aside + related (incl flexbox) --------*/
+body > main{
+    margin: auto;
+    order: 1;
+    padding: 2em;
+    width: 60%;
+}
+
+body > main > article > header, body > main > article > footer, body > main > article > section{
+    margin-bottom: 2em;
+}
+
+body > main > article > header > p, body > main > article > section > p{
+    margin-bottom: 1em;
+}
+
+.body > main > article > section > img{
+    margin: 1em;
+    max-width: 100%;
+}
+
+aside{
+    background: #DBB34D;
+    box-shadow: inset 0 0 15px #1D3042;
+    -webkit-box-shadow: inset 0 0 15px #1D3042;
+    -moz-box-shadow: inset 0 0 15px #1D3042;
+    order: 2;
+    padding: 1em;
+    width: 20%;
+}
+
+#asideWrapper{
+    order: 2;
+}
+
+aside > section > article{
+    border-top: dotted white 0.1em;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.related{
+    background: #DA9383;
+    box-shadow: inset 0 0 15px #1D3042;
+    -webkit-box-shadow: inset 0 0 15px #1D3042;
+    -moz-box-shadow: inset 0 0 15px #1D3042;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-left: 20%;
+    order: 3;
+    width: 100%;
+}
+
+.related > h2{
+    text-align: center;
+    width: 100%;
+}
+
+.related > article{
+    width: 20%;
+}
+
+#videoSize{
+    margin: 2em auto auto auto;
+    max-width: 100%;
+}
+
+/*-------- Footer + Flexbox --------*/
+
+body > footer{
+    background: #3F495F;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20%;
+    order: 4;
+    width: 100%;
+}
+
+#sitemap > h2{
+    text-align: center;
+}
+
+#sitemap > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sitemap > ul > li > a, #sitemap > ul > li > ul > li > a{
+    opacity: 0.6;
+}
+
+#sitemap > ul > li > a:hover, #sitemap > ul > li > ul > li > a:hover{
+    opacity: 1;
+}
+
+#contact, #feedback, #search, #about{
+    border-bottom: dotted white 0.2em;
+    margin: 1em auto 1em auto;
+    padding: 1em;
+    width: 50%;
+}
+
+#feedback{
+    order: 1;
+}
+
+#search{
+    order: 2;
+}
+
+#about{
+    order: 3;
+}
+
+#contact{
+    order: 3;
+}
+
+#sitemap{
+    margin: 1em auto 1em auto;
+    order: 4;
+    padding: 1em;
+    width: 90%;
+}
+
+#credits{
+    margin-top: 2em;
+    order: 6;
+    padding: 1em;
+    text-align: center;
+    width: 90%;
+}
+
+a[href="#feedback"]{ /*Attribute selector*/
+    color: #DBB34D;
+}
+
+/* Hide and show Aside (with JS) */
+
+#exit, #backAside{
+    cursor: pointer;
+    float: right;
+    max-width: 1em;
+}
+
+.backAsideView{
+    display: none;
+}
+
+.mystyle{
+    display: none;
+}
+
+
+
+/*--------Media Queries--------*/
+
+/*--------Breakpoint Tablet Size--------*/
+@media only screen and (max-width: 1024px){
+    body > header{
+        border-bottom-left-radius: 5em; /*Border-radius*/
+        position: relative;
+        width: 100%;
+    }
+
+    #placeHolder{
+        display: none;
+    }
+
+    body > header > p:nth-child(2){
+        display: none;
+    }
+
+    body > header > nav > ul > li{
+        width: 10em;
+    }
+
+    body > header > nav > ul > li > a{
+        opacity: 1;
+    }
+
+    .headerImage{
+        max-width: 40%;
+    }
+
+    body > main{
+        padding: 0.5em;
+        width: 70%;
+    }
+
+    body > main > article > section > img{
+        margin: 0.5em;
+    }
+
+    aside{
+        padding: 0.5em;
+        width: 30%;
+    }
+
+    .related{
+        margin: 0;
+    }
+
+    .related > article{
+        width: 30%;
+    }
+
+    body > footer{
+        margin: 0;
+    }
+
+    #sitemap > ul > li > a, #sitemap > ul > li > ul > li > a{
+        opacity: 1;
+    }
+}
+
+
+
+/*--------Breakpoint Smartphone Size--------*/
+@media only screen and (max-width: 600px){
+
+    body > header{
+        border-bottom-left-radius: 0; /*Border-radius*/
+        width: 100%;
+    }
+
+    body > header > form{
+        margin: 1em 0 0 40%;
+        width: 100%;
+    }
+
+    body > header > nav > ul > li{
+        width: 100%;
+    }
+
+    body > header > h1, body > header > p{
+        display: none;
+    }
+
+    .headerImage{
+        height: 60%;
+        width: 60%;
+    }
+
+    body > main{
+        padding: 2em;
+    }
+
+    body > main, body > aside, .related{
+        width: 100%;
+    }
+
+    body > main > article > section > img{
+        margin: auto;
+    }
+
+    body > aside{
+        display: none;
+    }
+
+    .related{
+        padding: 2em;
+    }
+
+    .related > article{
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    #feedback, #about, #search{
+        display: none;
+    }
+
+    #contact, #sitemap{
+        width: 100%;
+    }
+
+    #sitemap > ul{
+        justify-content: space-between;
+    }
+    #backAside{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
