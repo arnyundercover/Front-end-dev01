@@ -4,6 +4,8 @@
     line-height: 140%;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 html {
@@ -380,9 +382,13 @@ a[href="#feedback"]{ /*Attribute selector*/
 
 
 /*--------Breakpoint Smartphone Size--------*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 667px){
     html{
         font-size: 0.9em;
+    }
+
+    headerImage{
+        max-width: 20em;
     }
 
     body > header{
@@ -392,7 +398,7 @@ a[href="#feedback"]{ /*Attribute selector*/
 
     body > header > form{
         margin: 1rem auto 1rem 30%;
-        width: 100%;
+        width: auto;
     }
 
     body > header > nav > ul > li{
@@ -401,11 +407,6 @@ a[href="#feedback"]{ /*Attribute selector*/
 
     body > header > h1, body > header > p{
         display: none;
-    }
-
-    .headerImage{
-        height: 60%;
-        width: 60%;
     }
 
     body > main, .related{
