@@ -1,19 +1,15 @@
 /*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
 
-
-function removeAside(){
-    //QuerySelector
-    document.getElementById('remAside').classList.add('mystyle'); //Classlist object toevoegen
-    document.getElementById('backAside').classList.remove('backAsideView'); //Classlist object verwijderen
-    document.getElementById('flexMain').classList.add('wideMain');
+function removeForm(){
+    document.getElementById('moveForm').classList.add('removeStyle');
+    document.getElementById('changeMind').classList.remove('hideButton');
 }
 
-document.getElementById('exit').onclick = removeAside;
+document.getElementById('notNow').onclick = removeForm;
 
-function backAside(){
-    document.getElementById('remAside').classList.remove('mystyle');
-    document.getElementById('backAside').classList.add('backAsideView');
-    document.getElementById('flexMain').classList.remove('wideMain');
+function returnForm(){
+    document.getElementById('moveForm').classList.remove('removeStyle');
+    document.getElementById('changeMind').classList.add('hideButton');
 }
 
-document.getElementById('backAside').onclick = backAside;
+document.getElementById('changeMind').onclick = returnForm;
