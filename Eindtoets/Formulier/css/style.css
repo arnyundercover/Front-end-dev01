@@ -217,7 +217,14 @@ form fieldset{
 form label{
     display: block;
     margin-bottom: 0.5rem;
-    width: 100%;
+    text-align: right;
+    width: 80%;
+}
+
+
+label > input, label > textarea{
+    float: right;
+    margin-left: 1rem;
 }
 
 form > fieldset:hover{
