@@ -1,14 +1,17 @@
 /*-------- Algemene css --------*/
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     line-height: 140%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 html {
-    color: #333;
     background: #fff;
+    color: #333;
+    font-size: 1.2em;
 }
 
 li{
@@ -101,7 +104,7 @@ body > header > nav > ul{
 
 body > header > nav > ul > li{
     display: block;
-    width: 10em;
+    width: 11em;
     height: 3em;
     line-height: 3em;
 }
@@ -192,6 +195,17 @@ aside > section > article{
     width: 33.3333333%;
 }
 
+a[href$=".pdf"]:before{
+    content: url(../img/acro.gif);
+}
+
+a[href$=".vcf"]:before{
+    content: url(../img/vcard.png);
+}
+
+a[href$=".jpg"]:before{
+    content: url(../img/jpg.png);
+}
 
 
 /*-------- Footer + Flexbox --------*/
