@@ -171,7 +171,7 @@ a[href="#Elena"]:hover{
 body > main{
     margin: auto;
     order: 1;
-    padding: 2rem;
+    padding: 1rem;
     width: 60%;
 }
 
@@ -374,7 +374,7 @@ a[href="#feedback"]{ /*Attribute selector*/
     }
 
     body > main{
-        padding: 0.5rem;
+        padding: 1rem;
         width: 70%;
     }
 
@@ -383,7 +383,7 @@ a[href="#feedback"]{ /*Attribute selector*/
     }
 
     aside{
-        padding: 0.5rem;
+        padding: 1rem;
         width: 30%;
     }
 
